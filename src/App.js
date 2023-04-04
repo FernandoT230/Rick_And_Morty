@@ -1,13 +1,16 @@
 import './App.css';
 import Card from './components/Card.jsx';
 import Cards from './components/Cards.jsx';
-import SearchBar from './components/SearchBar.jsx';
+import Nav from './components/NAV';
 import characters, { Rick } from './data.js';
+import { useState } from 'react';
 
 function App() {
+   const [characters, setCharacters] = useState([])
+   
    return (
       <div className='App'>
-         <SearchBar onSearch={(characterID) => window.alert(characterID)} />
+         <Nav />
          <Cards characters={characters} />
          <Card
             id={Rick.id}

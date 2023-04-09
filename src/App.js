@@ -21,7 +21,7 @@ function App() {
   const [characters, setCharacters] = useState([]);
 
   const onSearch = () => {
-   setCharacters(...characters, example)
+   setCharacters([...characters, example])
   }
 
 

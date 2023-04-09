@@ -1,18 +1,13 @@
 import React from "react";
 import SearchBar from "./SearchBar";
 
-class Nav extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+const Nav = ({ onSearch }) => {
 
-    render(){
-        return(
-            <div>
-                <SearchBar />
-            </div>
-        )
-    }
-}
+  return (
+    <div>
+      <SearchBar onSearch={onSearch}/>
+    </div>
+  );
+};
 
-export default Nav
+export default Nav;

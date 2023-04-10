@@ -26,21 +26,23 @@ function App() {
 
   const onClose = (id) => {
     const charactersFiltered = characters.filter(
-      (character) => character.id !== Number(id)
+      (character) => character.id !== id
     );
     setCharacters(charactersFiltered);
   };
 
   return (
     <div className="App">
-      <Nav onSearch={onSearch}/>
+      <Nav onSearch={onSearch} />
 
       <Routes>
-        <Route path="/home" element={<Cards characters={characters} onClose={onClose} />} />
+        <Route
+          path="/home"
+          element={<Cards characters={characters} onClose={onClose} />}
+        />
         <Route path="/about" element={<About />} />
         <Route path="/detail/:id" element={<Detail />} />
       </Routes>
-      
     </div>
   );
 }

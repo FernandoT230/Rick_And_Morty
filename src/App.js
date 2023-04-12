@@ -54,7 +54,9 @@ function App() {
 
   return (
     <div className="App">
-      {location.pathname !== "/" && <Nav onSearch={onSearch} acces={access} />}
+      {location.pathname !== "/" && (
+        <Nav onSearch={onSearch} setAccess={setAccess} />
+      )}
       <Routes>
         <Route
           path="/home"

@@ -18,22 +18,22 @@ function App() {
   const location = useLocation();
   const navigate = useNavigate();
   const [characters, setCharacters] = useState([]);
-  const [acces, setAcces] = useState(false);
+  const [access, setAccess] = useState(false);
 
   const login = (userData) => {
     if (userData.email === email && userData.password === password) {
-      setAcces(true);
+      setAccess(true);
       navigate("/home");
     }
   };
 
   useEffect(() => {
-    if (!acces) {
+    if (!access) {
       navigate("/");
     } else {
       navigate("/home");
     }
-  }, [acces]);
+  }, [access]);
 
   const onSearch = (id) => {
     axios(`${URL_BASE}/${id}?key=${API_KEY}`).then(({ data }) => {
@@ -54,7 +54,7 @@ function App() {
 
   return (
     <div className="App">
-      {location.pathname !== "/" && <Nav onSearch={onSearch} />}
+      {location.pathname !== "/" && <Nav onSearch={onSearch} acces={access} />}
       <Routes>
         <Route
           path="/home"

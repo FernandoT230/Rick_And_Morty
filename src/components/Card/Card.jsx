@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { useState, useEffect } from "react";
 import { addFav, removeFav } from "../../redux/actions";
-import style from "./Card.module.css"
+import style from "./Card.module.css";
 
 function Card({
   id,
@@ -39,7 +39,6 @@ function Card({
   return (
     <div className={style.cardContainer}>
       <button onClick={() => onClose(id)}>X</button>
-
       <Link to={`/Detail/${id}`}>
         <h2 className={style.cardContainerh2}>{name}</h2>
       </Link>
@@ -53,7 +52,7 @@ function Card({
       {isFav ? (
         <button onClick={handleFavorite}>❤️</button>
       ) : (
-        <button onClick={handleFavorite}>🤍</button>
+        <button onClick={handleFavorite}>♡</button>
       )}
     </div>
   );

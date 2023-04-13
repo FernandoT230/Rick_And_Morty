@@ -57,7 +57,7 @@ function App() {
 
   return (
     <Provider store={store}>
-      <div className="App">
+      <div className="App rick-morty-background">
         {location.pathname !== "/" && (
           <Nav onSearch={onSearch} setAccess={setAccess} />
         )}

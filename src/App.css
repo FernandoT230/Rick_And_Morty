@@ -1,3 +1,23 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #232323;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+}
+
+.rick-morty-background {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://www.xtrafondos.com/descargar.php?id=5441&resolucion=2560x1440');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import SearchBar from "../SearchBar/SearchBar";
 import { Link } from "react-router-dom";
+import "./Nav.module.css";
 
 const Nav = ({ onSearch, setAccess }) => {
   const handleLogOut = () => {
@@ -8,21 +9,21 @@ const Nav = ({ onSearch, setAccess }) => {
   };
 
   return (
-    <nav>
+    <nav className="nav">
       <SearchBar onSearch={onSearch} />
-      <button>
-        <Link to="/About">ABOUT</Link>
+      <button className="nav-button">
+        <Link to="/About" className="nav-link">ABOUT</Link>
       </button>
 
-      <button>
-        <Link to="/home">HOME</Link>
+      <button className="nav-button">
+        <Link to="/home" className="nav-link">HOME</Link>
       </button>
       
-      <button>
-        <Link to="/favorites">Favorites</Link>
+      <button className="nav-button">
+        <Link to="/favorites" className="nav-link">Favorites</Link>
       </button>
 
-      <button onClick={handleLogOut}>LOG OUT</button>
+      <button className="nav-button" onClick={handleLogOut}>LOG OUT</button>
     </nav>
   );
 };

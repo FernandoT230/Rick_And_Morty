@@ -1,4 +1,4 @@
-.card-container {
+.cardContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,13 +12,13 @@
   max-width: 300px;
 }
 
-.card-container img {
+.cardContainerImg {
   width: 100%;
   margin-bottom: 10px;
   border-radius: 10px;
 }
 
-.card-container h2 {
+.cardContainerh2 {
   font-size: 24px;
   font-weight: bold;
   margin: 0 0 10px 0;

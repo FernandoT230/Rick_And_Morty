@@ -31,7 +31,7 @@ input:focus {
 }
 
 .submit-button {
-  background-color: #71b2f7;
+  background-color: #A2C83F;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -41,11 +41,21 @@ input:focus {
 }
 
 .submit-button:hover {
-  background-color: #1c3e6e;
+  background-color: #5A7023;
 }
   
 .error {
   font-size: 18px;
   color: #f44336;
   margin-top: 5px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  height: 50px;
 }

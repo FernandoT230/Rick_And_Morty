@@ -12,6 +12,18 @@
   max-width: 300px;
 }
 
+.cardContainer:hover {
+  color: #353338;
+  background-color: #9FC347;
+  box-shadow: 0 0 1rem rgba(81, 255, 110, 0.461), 0 0 4rem rgba(81, 180, 110, 0.461), 0 0 8rem rgba(81, 180, 110, 0.461);
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.3s;
+}
+
+.cardContainer a {
+  text-decoration: none;
+  color: #A3E0FC
+}
+
 .cardContainerImg {
   width: 100%;
   margin-bottom: 10px;
@@ -20,6 +32,12 @@
 
 .cardContainerh2 {
   font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.cardContainerh3 {
+  font-size: 15px;
   font-weight: bold;
   margin: 0 0 10px 0;
 }

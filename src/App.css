@@ -1,7 +1,6 @@
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   min-height: 100vh;
   background-color: #232323;
@@ -10,7 +9,6 @@
 }
 
 .rick-morty-background {
-  position: absolute;
   z-index: -1;
   top: 0;
   left: 0;
@@ -19,5 +17,6 @@
   background-image: url("https://www.xtrafondos.com/descargar.php?id=5441&resolucion=2560x1440");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   opacity: 0.8;
 }
